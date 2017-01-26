@@ -21,9 +21,9 @@ function Roller(rad){
 		if(this.x<=0||this.x>=window.innerWidth)
 			vel=-vel;
 
-		if(rotationZ>270)
+		if(rotationZ>270&&rotationZ<330)
 			vel+=Math.pow(1.05, 1.05);
-		else if(rotationZ<90)
+		else if(rotationZ<90&&rotationZ>30)
 			vel-=Math.pow(1.05, 1.05);
 		else
 			vel/=1.1;
