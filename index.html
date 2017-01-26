@@ -1,0 +1,24 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script type="text/javascript">
+	var js = document.createElement("script");
+
+	js.type = "text/javascript";
+
+	if (screen.width > 500)
+		js.src = "sketch-desktop.js";
+	else
+		js.src = "sketch-mobile.js";
+	document.getElementsByTagName('head')[0].appendChild(js);
+  </script>
+  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+  <!--script language="javascript" type="text/javascript" src="sketch-desktop.js"></script-->
+  <style> 
+  	body {padding: 0; margin: 0;} 
+  </style>
+</head>
+
+<body>
+</body>
+</html>
